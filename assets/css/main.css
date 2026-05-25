@@ -1,3 +1,13 @@
+/* Motion Tokens */
+:root {
+  --duration-fast: 0.22s;
+  --duration-base: 0.45s;
+  --duration-slow: 0.7s;
+  --var(--ease-out)-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --var(--var(--ease-in-out)-out): cubic-bezier(0.4, 0, 0.2, 1);
+  --var(--ease-out): cubic-bezier(0.0, 0, 0.2, 1);
+}
+
 a, a:hover {
   text-decoration: none;
 }
@@ -1014,7 +1024,7 @@ Location:
   background: var(--ztc-bg-bg-2);
   z-index: -1;
   border-radius: 50%;
-  animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms var(--ease-out) infinite;
   opacity: 40%;
   display: inline-block;
 }
@@ -1539,7 +1549,7 @@ Location:
   background: var(--ztc-bg-bg-2);
   z-index: -1;
   border-radius: 50%;
-  animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms var(--ease-out) infinite;
   opacity: 40%;
   display: inline-block;
 }
@@ -1580,7 +1590,7 @@ Location:
   position: absolute;
   bottom: 0;
   left: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 .service1-section-area .elements8 {
   position: absolute;
@@ -1789,12 +1799,12 @@ Location:
   position: absolute;
   top: 0;
   left: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
   position: absolute;
   top: 0;
   right: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
 .service2-section-area .service-header {
   margin-bottom: 60px;
@@ -1890,12 +1900,12 @@ Location:
   position: absolute;
   right: 0;
   top: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
   position: absolute;
   bottom: 0;
   left: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
   background: var(--ztc-bg-bg-1);
   padding: 20px;
@@ -2542,7 +2552,7 @@ ul.pagination li a.active {
   position: absolute;
   bottom: 0;
   left: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 .service1-section-area.rtl-area .elements8 {
   position: absolute;
@@ -2768,7 +2778,7 @@ ul.pagination li a.active {
   position: absolute;
   right: 0;
   bottom: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
 .hero1-section-area .elements4 {
   position: absolute;
@@ -2868,7 +2878,7 @@ ul.pagination li a.active {
   bottom: 0;
   left: -125px;
   z-index: -1;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 @media (max-width: 767px) {
   .hero1-section-area .images .elements3 {
@@ -3002,7 +3012,7 @@ ul.pagination li a.active {
   background: var(--ztc-bg-bg-1);
   z-index: -1;
   border-radius: 50%;
-  animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms var(--ease-out) infinite;
   opacity: 40%;
   display: inline-block;
 }
@@ -3115,7 +3125,7 @@ ul.pagination li a.active {
   position: absolute;
   width: 100%;
   bottom: 67px;
-  animation: moveWaves 10s linear infinite;
+  animation: moveWaves 10s var(--ease-out-expo) infinite;
 }
 @media (max-width: 767px) {
     display: none;
@@ -3129,7 +3139,7 @@ ul.pagination li a.active {
     position: absolute;
     width: 100%;
     bottom: 205px;
-    animation: moveWaves 10s linear infinite;
+    animation: moveWaves 10s var(--ease-out-expo) infinite;
     transform: rotate(7deg);
   }
 }
@@ -3282,7 +3292,7 @@ ul.pagination li a.active {
   position: absolute;
   right: 0;
   bottom: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
 .inner-header-section-area .elements4 {
   position: absolute;
@@ -3333,7 +3343,7 @@ ul.pagination li a.active {
   position: absolute;
   right: 0;
   bottom: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
 .hero1-section-area.rtl-area .elements4 {
   position: absolute;
@@ -3433,7 +3443,7 @@ ul.pagination li a.active {
   bottom: 0;
   left: -125px;
   z-index: -1;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 @media (max-width: 767px) {
   .hero1-section-area.rtl-area .images .elements3 {
@@ -4975,7 +4985,7 @@ ul.pagination li a.active {
   position: absolute;
   bottom: 20px;
   right: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 .footer1-section-area .elements3 {
   position: absolute;
@@ -5165,7 +5175,7 @@ ul.pagination li a.active {
   position: absolute;
   bottom: 20px;
   right: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 .footer2-section-area .elements3 {
   position: absolute;
@@ -5357,7 +5367,7 @@ ul.pagination li a.active {
   position: absolute;
   bottom: 20px;
   right: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 .footer3-section-area .elements3 {
   position: absolute;
@@ -5549,7 +5559,7 @@ ul.pagination li a.active {
   position: absolute;
   bottom: 20px;
   right: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 .footer4-section-area .elements3 {
   position: absolute;
@@ -5744,7 +5754,7 @@ ul.pagination li a.active {
   position: absolute;
   bottom: 20px;
   right: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 .footer1-section-area.rtl-area .elements3 {
   position: absolute;
@@ -7751,7 +7761,7 @@ body.homepage1-body, html {
   position: absolute;
   top: 0;
   right: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 
   background: var(--ztc-text-text-3);
@@ -7886,7 +7896,7 @@ body.homepage1-body, html {
   position: absolute;
   top: 0;
   right: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 
 .work1-section-area.rtl-area {
@@ -8012,7 +8022,7 @@ body.homepage1-body, html {
   position: absolute;
   top: 0;
   left: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
 
 /*============= WORK CSS AREA ===============*/
@@ -8032,7 +8042,7 @@ body.homepage1-body, html {
   z-index: 1000;
 }
 
-  animation: spinner 1s infinite linear;
+  animation: spinner 1s infinite var(--ease-out-expo);
   border-radius: 50%;
   border-top-color: var(--ztc-text-text-2);
   height: 150px;
@@ -8156,7 +8166,7 @@ body.homepage1-body, html {
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
-  transition: all 200ms linear;
+  transition: all var(--duration-base) var(--var(--ease-out)-expo);
   color: var(--ztc-text-text-1);
 }
 
@@ -8174,7 +8184,7 @@ body.homepage1-body, html {
   stroke: var(--ztc-text-text-3);
   stroke-width: 4;
   box-sizing: border-box;
-  transition: all 200ms linear;
+  transition: all var(--duration-base) var(--var(--ease-out)-expo);
 }
 
 .progress-wrap.active-progress {
@@ -8220,12 +8230,12 @@ body.homepage1-body, html {
   top: 5px;
   left: 35px;
   border-radius: 50%;
-  transition: 300ms all;
+  transition: all var(--duration-base) var(--var(--ease-out)-expo);
 }
   position: absolute;
   left: -75px;
   top: 2px;
-  transition: 300ms all;
+  transition: all var(--duration-base) var(--var(--ease-out)-expo);
 }
   left: unset;
   left: 73px;
@@ -8459,12 +8469,12 @@ body.homepage1-body, html {
   top: 5px;
   left: 35px;
   border-radius: 50%;
-  transition: 300ms all;
+  transition: all var(--duration-base) var(--var(--ease-out)-expo);
 }
   position: absolute;
   left: -75px;
   top: 2px;
-  transition: 300ms all;
+  transition: all var(--duration-base) var(--var(--ease-out)-expo);
 }
   left: unset;
   left: 73px;
@@ -8659,7 +8669,7 @@ body.homepage1-body, html {
   background: var(--ztc-bg-bg-8);
   z-index: -1;
   border-radius: 50%;
-  animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms var(--ease-out) infinite;
   opacity: 40%;
   display: inline-block;
 }
@@ -9540,7 +9550,7 @@ body.homepage1-body, html {
   position: absolute;
   bottom: 20px;
   right: 0;
-  animation: sweep 2s infinite ease-in-out;
+  animation: sweep 2s infinite var(--var(--ease-in-out)-out);
 }
   margin-bottom: 60px;
 }
@@ -9688,12 +9698,12 @@ body.homepage1-body, html {
   position: absolute;
   top: 0;
   right: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
   position: absolute;
   bottom: 0;
   left: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
   margin-bottom: 60px;
 }
@@ -10711,7 +10721,7 @@ body.homepage1-body, html {
   position: absolute;
   bottom: 0;
   right: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
   margin-bottom: 60px;
 }
@@ -11151,7 +11161,7 @@ body.homepage1-body, html {
   position: absolute;
   bottom: 0;
   right: 0;
-  animation: clean 5s infinite ease-in-out;
+  animation: clean 5s infinite var(--var(--ease-in-out)-out);
 }
   margin-bottom: 60px;
 }
@@ -11396,7 +11406,7 @@ body.homepage1-body, html {
   }
 }
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
+  background-image: var(--ease-out-expo)-gradient(currentColor, currentColor);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 100% 3px;
