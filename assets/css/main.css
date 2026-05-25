@@ -1,5 +1,19 @@
 /* Motion Tokens */
 :root {
+
+  /* Typography Tokens */
+  --line-height-tight: 1.1;
+  --line-height-heading: 1.15;
+  --line-height-readable: 1.3;
+  --line-height-comfortable: 1.6;
+  --line-height-compact: 1.5;
+  
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  
+  --max-width-body: 44ch;
+
   --duration-fast: 0.22s;
   --duration-base: 0.45s;
   --duration-slow: 0.7s;
@@ -208,6 +222,20 @@ img {
 }
 
 :root {
+
+  /* Typography Tokens */
+  --line-height-tight: 1.1;
+  --line-height-heading: 1.15;
+  --line-height-readable: 1.3;
+  --line-height-comfortable: 1.6;
+  --line-height-compact: 1.5;
+  
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  
+  --max-width-body: 44ch;
+
   --ztc-text-text-1: #fff;
   --ztc-text-text-2: #2CA2FC;
   --ztc-text-text-3: #010F1A;
@@ -364,6 +392,7 @@ Location:
 .heading1 h5 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
+  letter-spacing: var(--letter-spacing-tight);
   line-height: var(--ztc-font-size-font-s18);
   font-weight: var(--ztc-weight-medium);
   color: var(--ztc-text-text-3);
@@ -381,7 +410,8 @@ Location:
 .heading1 h1 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s64);
-  line-height: var(--ztc-font-size-font-s70);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
   font-weight: var(--ztc-weight-bold);
   color: var(--ztc-text-text-3);
   margin-bottom: 16px;
@@ -389,7 +419,8 @@ Location:
 @media (max-width: 767px) {
   .heading1 h1 {
     font-size: var(--ztc-font-size-font-s32);
-    line-height: var(--ztc-font-size-font-s40);
+    letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
   }
 }
 .heading1 p {
@@ -402,7 +433,8 @@ Location:
 .heading1 h2 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s44);
-  line-height: var(--ztc-font-size-font-s52);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-heading);
   font-weight: var(--ztc-weight-bold);
   color: var(--ztc-text-text-1);
   margin-bottom: 16px;
@@ -410,13 +442,15 @@ Location:
 @media (max-width: 767px) {
   .heading1 h2 {
     font-size: var(--ztc-font-size-font-s32);
-    line-height: var(--ztc-font-size-font-s40);
+    letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-heading);
   }
 }
 
 .heading2 h5 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
+  letter-spacing: var(--letter-spacing-tight);
   line-height: var(--ztc-font-size-font-s18);
   font-weight: var(--ztc-weight-medium);
   color: var(--ztc-text-text-2);
@@ -441,7 +475,8 @@ Location:
 .heading2 h2 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s44);
-  line-height: var(--ztc-font-size-font-s52);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-heading);
   font-weight: var(--ztc-weight-bold);
   color: var(--ztc-text-text-3);
   margin-bottom: 16px;
@@ -449,7 +484,8 @@ Location:
 @media (max-width: 767px) {
   .heading2 h2 {
     font-size: var(--ztc-font-size-font-s32);
-    line-height: var(--ztc-font-size-font-s40);
+    letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-heading);
   }
 }
 
@@ -2796,8 +2832,9 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-semibold);
-  line-height: 24px;
+  line-height: var(--line-height-readable);
   padding-bottom: 20px;
 }
 .hero1-section-area .hero-header-area .header-auhtor-area .auhtor-image {
@@ -2827,6 +2864,7 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-semibold);
   line-height: 18px;
   padding-top: 8px;
@@ -3361,8 +3399,9 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-semibold);
-  line-height: 24px;
+  line-height: var(--line-height-readable);
   padding-bottom: 20px;
 }
 .hero1-section-area.rtl-area .hero-header-area .header-auhtor-area .auhtor-image {
@@ -3392,6 +3431,7 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-semibold);
   line-height: 18px;
   padding-top: 8px;
@@ -3529,7 +3569,8 @@ ul.pagination li a.active {
 .mobile-sidebar.mobile-sidebar1 .single-footer h3 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
-  line-height: var(--ztc-font-size-font-s20);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-readable);
   font-weight: var(--ztc-weight-semibold);
   color: var(--ztc-bg-bg-1);
   margin-top: 20px;
@@ -3632,7 +3673,8 @@ ul.pagination li a.active {
 .mobile-sidebar.mobile-sidebar2 .single-footer h3 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
-  line-height: var(--ztc-font-size-font-s20);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-readable);
   font-weight: var(--ztc-weight-semibold);
   color: var(--ztc-bg-bg-1);
   margin-top: 20px;
@@ -3735,7 +3777,8 @@ ul.pagination li a.active {
 .mobile-sidebar.mobile-sidebar3 .single-footer h3 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
-  line-height: var(--ztc-font-size-font-s20);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-readable);
   font-weight: var(--ztc-weight-semibold);
   color: var(--ztc-bg-bg-1);
   margin-top: 20px;
@@ -3838,7 +3881,8 @@ ul.pagination li a.active {
 .mobile-sidebar.mobile-sidebar4 .single-footer h3 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
-  line-height: var(--ztc-font-size-font-s20);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-readable);
   font-weight: var(--ztc-weight-semibold);
   color: var(--ztc-bg-bg-1);
   margin-top: 20px;
@@ -3947,7 +3991,8 @@ ul.pagination li a.active {
 .mobile-sidebar.mobile-sidebar1.rtl-area .single-footer h3 {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
-  line-height: var(--ztc-font-size-font-s20);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-readable);
   font-weight: var(--ztc-weight-semibold);
   color: var(--ztc-bg-bg-1);
   margin-top: 20px;
@@ -5046,8 +5091,9 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 28px;
+  line-height: var(--line-height-readable);
 }
 .footer1-section-area .footer-header p {
   color: var(--ztc-text-text-4);
@@ -5236,8 +5282,9 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 28px;
+  line-height: var(--line-height-readable);
 }
 .footer2-section-area .footer-header p {
   color: var(--ztc-text-text-7);
@@ -5428,8 +5475,9 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 28px;
+  line-height: var(--line-height-readable);
 }
 .footer3-section-area .footer-header p {
   color: var(--ztc-text-text-4);
@@ -5620,8 +5668,9 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 28px;
+  line-height: var(--line-height-readable);
 }
 .footer4-section-area .footer-header p {
   color: var(--ztc-text-text-12);
@@ -5815,8 +5864,9 @@ ul.pagination li a.active {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 28px;
+  line-height: var(--line-height-readable);
 }
 .footer1-section-area.rtl-area .footer-header p {
   color: var(--ztc-text-text-4);
@@ -5947,6 +5997,7 @@ body.homepage1-body, html {
 }
 
 .homepage1-body {
+  max-width: var(--max-width-body);
   overflow-x: hidden;
 }
 .homepage1-body .header-area.homepage1 {
@@ -5980,9 +6031,10 @@ body.homepage1-body, html {
 }
 .homepage1-body .header-area.homepage1 .text h2 {
   font-size: var(--ztc-font-size-font-s18);
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
   font-family: var(--ztc-family-font1);
-  line-height: var(--ztc-font-size-font-s18);
+  line-height: var(--line-height-heading);
   color: var(--ztc-text-text-1);
   transform: rotate(-45deg);
   position: relative;
@@ -6347,9 +6399,10 @@ body.homepage1-body, html {
 }
 .homepage2-body .header-area.homepage2 .text h2 {
   font-size: var(--ztc-font-size-font-s18);
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
   font-family: var(--ztc-family-font1);
-  line-height: var(--ztc-font-size-font-s18);
+  line-height: var(--line-height-heading);
   color: var(--ztc-text-text-1);
   transform: rotate(-45deg);
   position: relative;
@@ -6710,9 +6763,10 @@ body.homepage1-body, html {
 }
 .homepage3-body .header-area.homepage3 .text h2 {
   font-size: var(--ztc-font-size-font-s18);
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
   font-family: var(--ztc-family-font1);
-  line-height: var(--ztc-font-size-font-s18);
+  line-height: var(--line-height-heading);
   color: var(--ztc-text-text-1);
   transform: rotate(-45deg);
   position: relative;
@@ -7021,9 +7075,10 @@ body.homepage1-body, html {
 }
 .homepage4-body .header-area.homepage4 .text h2 {
   font-size: var(--ztc-font-size-font-s18);
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
   font-family: var(--ztc-family-font1);
-  line-height: var(--ztc-font-size-font-s18);
+  line-height: var(--line-height-heading);
   color: var(--ztc-text-text-1);
   transform: rotate(-45deg);
   position: relative;
@@ -7281,6 +7336,7 @@ body.homepage1-body, html {
 }
 
 .homepage1-body {
+  max-width: var(--max-width-body);
   overflow-x: hidden;
 }
 .homepage1-body .rtl-header .text {
@@ -7304,9 +7360,10 @@ body.homepage1-body, html {
 }
 .homepage1-body .rtl-header .text h2 {
   font-size: var(--ztc-font-size-font-s18);
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
   font-family: var(--ztc-family-font1);
-  line-height: var(--ztc-font-size-font-s18);
+  line-height: var(--line-height-heading);
   color: var(--ztc-text-text-1);
   transform: rotate(-45deg);
   position: relative;
@@ -8303,8 +8360,9 @@ body.homepage1-body, html {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s32);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 32px;
+  line-height: var(--line-height-readable);
 }
 .pricing-plan-section-area .single-pricing-area .pricing-box p {
   color: var(--ztc-text-text-4);
@@ -8319,8 +8377,9 @@ body.homepage1-body, html {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s44);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 44px;
+  line-height: var(--line-height-heading);
   background: var(--ztc-text-text-1);
   padding: 16px;
   display: inline-block;
@@ -8393,8 +8452,9 @@ body.homepage1-body, html {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s32);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 32px;
+  line-height: var(--line-height-readable);
 }
 .pricing-plan-inner-section-area .single-pricing-area .pricing-box p {
   color: var(--ztc-text-text-4);
@@ -8409,8 +8469,9 @@ body.homepage1-body, html {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s44);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 44px;
+  line-height: var(--line-height-heading);
   background: var(--ztc-text-text-1);
   padding: 16px;
   display: inline-block;
@@ -8547,8 +8608,9 @@ body.homepage1-body, html {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s44);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 44px;
+  line-height: var(--line-height-heading);
   display: inline-block;
   border-radius: 8px;
 }
@@ -9060,12 +9122,13 @@ body.homepage1-body, html {
   content: "";
 }
 .faq1-section-area .faq-accordian-area .accordion .accordion-item .accordion-body {
+  max-width: var(--max-width-body);
   color: var(--ztc-text-text-1);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
   font-weight: var(--ztc-weight-medium);
-  line-height: 28px;
+  line-height: var(--line-height-comfortable);
   padding: 0 24px 24px 24px;
 }
 
@@ -9142,12 +9205,13 @@ body.homepage1-body, html {
   content: "";
 }
 .faq-header-section-area .faq-header .faq-accordian-area .accordion .accordion-item .accordion-body {
+  max-width: var(--max-width-body);
   color: var(--ztc-text-text-1);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
   font-weight: var(--ztc-weight-medium);
-  line-height: 28px;
+  line-height: var(--line-height-comfortable);
   padding: 0 24px 24px 24px;
 }
 .faq-header-section-area .images {
@@ -9266,12 +9330,13 @@ body.homepage1-body, html {
   content: "";
 }
 .faq-single-area .faq-accordian-area .accordion .accordion-item .accordion-body {
+  max-width: var(--max-width-body);
   color: var(--ztc-text-text-1);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
   font-weight: var(--ztc-weight-medium);
-  line-height: 28px;
+  line-height: var(--line-height-comfortable);
   padding: 0 24px 24px 24px;
 }
 
@@ -9368,12 +9433,13 @@ body.homepage1-body, html {
   right: inherit;
 }
 .faq1-section-area.rtl-area .faq-accordian-area .accordion .accordion-item .accordion-body {
+  max-width: var(--max-width-body);
   color: var(--ztc-text-text-1);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
   font-weight: var(--ztc-weight-medium);
-  line-height: 28px;
+  line-height: var(--line-height-comfortable);
   padding: 0 24px 24px 24px;
 }
 
@@ -9433,8 +9499,9 @@ body.homepage1-body, html {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
   font-style: normal;
+  letter-spacing: var(--letter-spacing-tight);
   font-weight: var(--ztc-weight-bold);
-  line-height: 24px;
+  line-height: var(--line-height-readable);
 }
 .contact1-section-area .contact-boxarea .conact-input-area .input-area input {
   width: 100%;
