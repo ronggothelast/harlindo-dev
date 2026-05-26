@@ -1,4 +1,4 @@
-/* ===== HIGH-END MOTION TOKENS ===== */\n:root {\n  --duration-fast: 0.22s;\n  --duration-base: 0.45s;\n  --duration-slow: 0.7s;\n  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);\n}\n\n/* ===== GLOBAL STYLES ===== */\na, a:hover {\n  text-decoration: none;\n  transition: all var(--duration-base) var(--ease-out-expo);\n}
+/* ===== HIGH-END MOTION TOKENS ===== */\n:root {\n  --duration-fast: 0.22s;\n  --duration-base: 0.45s;\n  --duration-slow: 0.7s;\n  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);\n}\n\n/* ===== TYPOGRAPHY TOKENS ===== */\n:root {\n  --line-height-tight: 1.1;\n  --line-height-snug: 1.15;\n  --line-height-normal: 1.3;\n  --line-height-relaxed: 1.6;\n  --line-height-loose: 1.5;\n  --letter-spacing-tight: -0.03em;\n  --letter-spacing-normal: 0;\n}\n\n/* ===== GLOBAL STYLES ===== */\na, a:hover {\n  text-decoration: none;\n  transition: all var(--duration-base) var(--ease-out-expo);\n}
 
 ul {
   padding: 0;
@@ -8,18 +8,7 @@ ul li {
   list-style: none;
 }
 
-h2, p {
-  margin-bottom: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0;
-}
+h1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-bottom: 0;\n  letter-spacing: var(--letter-spacing-tight);\n}\n\nh1 {\n  line-height: var(--line-height-tight);\n}\n\nh2 {\n  line-height: var(--line-height-snug);\n}\n\nh3 {\n  line-height: var(--line-height-normal);\n}\n\np {\n  margin-bottom: 0;\n  line-height: var(--line-height-relaxed);\n  letter-spacing: var(--letter-spacing-normal);\n  max-width: 44ch;\n}
 
 input, textarea {
   background: none;
