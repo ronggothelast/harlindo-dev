@@ -1,0 +1,25 @@
+/* ===== CAROUSEL OVERFLOW FIX ===== */
+.service1-section-area .service-slider-area.owl-carousel {
+  overflow: hidden;
+}
+
+.service1-section-area .service-slider-area.owl-carousel .owl-stage-outer {
+  position: relative !important;
+}
+
+.work1-section-area .work-slider-area.owl-carousel {
+  overflow: hidden;
+}
+
+.work1-section-area .work-slider-area.owl-carousel .owl-stage-outer {
+  position: relative !important;
+}
+
+/* Ensure carousel containers don't overflow */
+.owl-carousel {
+  overflow: hidden;
+}
+
+.owl-stage-outer {
+  overflow: hidden;
+}
