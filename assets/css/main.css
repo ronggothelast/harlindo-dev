@@ -1,6 +1,4 @@
-a, a:hover {
-  text-decoration: none;
-}
+/* ===== HIGH-END MOTION TOKENS ===== */\n:root {\n  --duration-fast: 0.22s;\n  --duration-base: 0.45s;\n  --duration-slow: 0.7s;\n  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);\n}\n\n/* ===== GLOBAL STYLES ===== */\na, a:hover {\n  text-decoration: none;\n  transition: all var(--duration-base) var(--ease-out-expo);\n}
 
 ul {
   padding: 0;
@@ -8156,7 +8154,7 @@ body.homepage1-body, html {
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
-  transition: all 200ms linear;
+  transition: all var(--duration-fast) var(--ease-out-expo);
   color: var(--ztc-text-text-1);
 }
 
@@ -8174,7 +8172,7 @@ body.homepage1-body, html {
   stroke: var(--ztc-text-text-3);
   stroke-width: 4;
   box-sizing: border-box;
-  transition: all 200ms linear;
+  transition: all var(--duration-fast) var(--ease-out-expo);
 }
 
 .progress-wrap.active-progress {
@@ -8220,12 +8218,12 @@ body.homepage1-body, html {
   top: 5px;
   left: 35px;
   border-radius: 50%;
-  transition: 300ms all;
+  transition: all var(--duration-base) var(--ease-out-expo);
 }
   position: absolute;
   left: -75px;
   top: 2px;
-  transition: 300ms all;
+  transition: all var(--duration-base) var(--ease-out-expo);
 }
   left: unset;
   left: 73px;
@@ -8459,12 +8457,12 @@ body.homepage1-body, html {
   top: 5px;
   left: 35px;
   border-radius: 50%;
-  transition: 300ms all;
+  transition: all var(--duration-base) var(--ease-out-expo);
 }
   position: absolute;
   left: -75px;
   top: 2px;
-  transition: 300ms all;
+  transition: all var(--duration-base) var(--ease-out-expo);
 }
   left: unset;
   left: 73px;
